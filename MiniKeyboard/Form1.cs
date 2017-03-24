@@ -33,5 +33,60 @@ namespace MiniKeyboard
                 TxtMode.Text = "Multi-Press";
             }
         }
+
+        private void BtnSeven_Click(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText(".");
+        }
+
+        private void BtnEight_Click(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText("a");
+        }
+
+        private void BtnNine_Click(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText("d");
+        }
+
+        private void BtnFour_Click(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText("g");
+        }
+
+        private void BtnFive_Click(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText("j");
+        }
+
+        private void BtnSix_Click(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText("m");
+        }
+
+        private void BtnOne_Click(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText("p");
+        }
+
+        private void BtnTwo_Click(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText("t");
+        }
+
+        private void BtnThree_Click(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText("x");
+        }
+
+        private void BtnStar_Click(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText("*");
+        }
+
+        private void BtnHash_Click(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText("#");
+        }
     }
 }

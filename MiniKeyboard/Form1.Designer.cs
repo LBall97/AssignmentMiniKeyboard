@@ -37,7 +37,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlText = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtWordBuilder = new System.Windows.Forms.TextBox();
             this.PnlDisplay = new System.Windows.Forms.Panel();
             this.TxtDisplay = new System.Windows.Forms.TextBox();
             this.PnlKeys = new System.Windows.Forms.Panel();
@@ -132,20 +132,20 @@
             // 
             this.PnlText.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PnlText.Controls.Add(this.TxtMode);
-            this.PnlText.Controls.Add(this.textBox1);
+            this.PnlText.Controls.Add(this.TxtWordBuilder);
             this.PnlText.Location = new System.Drawing.Point(147, 221);
             this.PnlText.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.PnlText.Name = "PnlText";
             this.PnlText.Size = new System.Drawing.Size(226, 33);
             this.PnlText.TabIndex = 2;
             // 
-            // textBox1
+            // TxtWordBuilder
             // 
-            this.textBox1.Location = new System.Drawing.Point(2, 3);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 20);
-            this.textBox1.TabIndex = 0;
+            this.TxtWordBuilder.Location = new System.Drawing.Point(2, 3);
+            this.TxtWordBuilder.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtWordBuilder.Name = "TxtWordBuilder";
+            this.TxtWordBuilder.Size = new System.Drawing.Size(153, 20);
+            this.TxtWordBuilder.TabIndex = 0;
             // 
             // PnlDisplay
             // 
@@ -249,6 +249,7 @@
             this.BtnSeven.TabIndex = 4;
             this.BtnSeven.Text = "7\r\n. , \"";
             this.BtnSeven.UseVisualStyleBackColor = false;
+            this.BtnSeven.Click += new System.EventHandler(this.BtnSeven_Click);
             // 
             // BtnEight
             // 
@@ -260,6 +261,7 @@
             this.BtnEight.TabIndex = 5;
             this.BtnEight.Text = "8\r\nA B C";
             this.BtnEight.UseVisualStyleBackColor = false;
+            this.BtnEight.Click += new System.EventHandler(this.BtnEight_Click);
             // 
             // BtnNine
             // 
@@ -271,6 +273,7 @@
             this.BtnNine.TabIndex = 6;
             this.BtnNine.Text = "9\r\nD E F";
             this.BtnNine.UseVisualStyleBackColor = false;
+            this.BtnNine.Click += new System.EventHandler(this.BtnNine_Click);
             // 
             // button4
             // 
@@ -292,6 +295,7 @@
             this.BtnOne.TabIndex = 9;
             this.BtnOne.Text = "1\r\nP Q R S";
             this.BtnOne.UseVisualStyleBackColor = false;
+            this.BtnOne.Click += new System.EventHandler(this.BtnOne_Click);
             // 
             // BtnFour
             // 
@@ -303,6 +307,7 @@
             this.BtnFour.TabIndex = 11;
             this.BtnFour.Text = "4\r\nG H I";
             this.BtnFour.UseVisualStyleBackColor = false;
+            this.BtnFour.Click += new System.EventHandler(this.BtnFour_Click);
             // 
             // BtnThree
             // 
@@ -314,6 +319,7 @@
             this.BtnThree.TabIndex = 5;
             this.BtnThree.Text = "3\r\nX Y Z";
             this.BtnThree.UseVisualStyleBackColor = false;
+            this.BtnThree.Click += new System.EventHandler(this.BtnThree_Click);
             // 
             // BtnTwo
             // 
@@ -325,6 +331,7 @@
             this.BtnTwo.TabIndex = 6;
             this.BtnTwo.Text = "2\r\nT U V";
             this.BtnTwo.UseVisualStyleBackColor = false;
+            this.BtnTwo.Click += new System.EventHandler(this.BtnTwo_Click);
             // 
             // BtnSix
             // 
@@ -336,6 +343,7 @@
             this.BtnSix.TabIndex = 7;
             this.BtnSix.Text = "6\r\nM N O";
             this.BtnSix.UseVisualStyleBackColor = false;
+            this.BtnSix.Click += new System.EventHandler(this.BtnSix_Click);
             // 
             // BtnFive
             // 
@@ -347,6 +355,7 @@
             this.BtnFive.TabIndex = 8;
             this.BtnFive.Text = "5\r\nJ K L";
             this.BtnFive.UseVisualStyleBackColor = false;
+            this.BtnFive.Click += new System.EventHandler(this.BtnFive_Click);
             // 
             // button13
             // 
@@ -379,6 +388,7 @@
             this.BtnHash.TabIndex = 10;
             this.BtnHash.Text = "#\r\n000";
             this.BtnHash.UseVisualStyleBackColor = false;
+            this.BtnHash.Click += new System.EventHandler(this.BtnHash_Click);
             // 
             // BtnSpace
             // 
@@ -401,6 +411,7 @@
             this.BtnStar.TabIndex = 8;
             this.BtnStar.Text = "* - _";
             this.BtnStar.UseVisualStyleBackColor = false;
+            this.BtnStar.Click += new System.EventHandler(this.BtnStar_Click);
             // 
             // TxtMode
             // 
@@ -449,7 +460,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configureToolStripMenuItem;
         private System.Windows.Forms.Panel PnlText;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtWordBuilder;
         private System.Windows.Forms.Panel PnlDisplay;
         private System.Windows.Forms.TextBox TxtDisplay;
         private System.Windows.Forms.Panel PnlKeys;
