@@ -1,0 +1,9 @@
+E:\University\Programming\MiniKeyboard\MiniKeyboard\bin\Debug\MiniKeyboard.exe.config
+E:\University\Programming\MiniKeyboard\MiniKeyboard\bin\Debug\MiniKeyboard.exe
+E:\University\Programming\MiniKeyboard\MiniKeyboard\bin\Debug\MiniKeyboard.pdb
+E:\University\Programming\MiniKeyboard\MiniKeyboard\obj\Debug\MiniKeyboard.csprojResolveAssemblyReference.cache
+E:\University\Programming\MiniKeyboard\MiniKeyboard\obj\Debug\MiniKeyboard.Form1.resources
+E:\University\Programming\MiniKeyboard\MiniKeyboard\obj\Debug\MiniKeyboard.Properties.Resources.resources
+E:\University\Programming\MiniKeyboard\MiniKeyboard\obj\Debug\MiniKeyboard.csproj.GenerateResource.Cache
+E:\University\Programming\MiniKeyboard\MiniKeyboard\obj\Debug\MiniKeyboard.exe
+E:\University\Programming\MiniKeyboard\MiniKeyboard\obj\Debug\MiniKeyboard.pdb
