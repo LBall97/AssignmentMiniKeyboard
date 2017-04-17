@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using MyDialogs;
 
 namespace MiniKeyboard
 {
@@ -18,6 +20,8 @@ namespace MiniKeyboard
         }
 
         string Str_KeyStrokes;
+        string FilePath = Directory.GetCurrentDirectory() + "\\";
+        string FileName;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -102,6 +106,26 @@ namespace MiniKeyboard
         private void button13_Click(object sender, EventArgs e)
         {
             TxtDisplay.AppendText("\n");
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FileName = My_Dialogs.InputBox("Please enter a valid file name");
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FileName = My_Dialogs.InputBox("Please enter a valid file name");
+            StreamWriter OutputStream = File.CreateText(FilePath + FileName);
+            OutputStream.Write(TxtDisplay.Text);
+            OutputStream.Close();
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StreamWriter OutputStream = File.CreateText(FilePath + FileName);
+            OutputStream.Write(TxtDisplay.Text);
+            OutputStream.Close();
         }
     }
 }
