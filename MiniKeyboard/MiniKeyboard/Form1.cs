@@ -22,6 +22,7 @@ namespace MiniKeyboard
         string Str_KeyStrokes;
         string FilePath = Directory.GetCurrentDirectory() + "\\";
         string FileName;
+        int i = 1;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -48,7 +49,18 @@ namespace MiniKeyboard
 
         private void BtnEight_Click(object sender, EventArgs e)
         {
-            TxtWordBuilder.AppendText("a");
+            string[] SelectedChar = new string[7];
+            int count = 0;
+            SelectedChar[0] = "a";
+            SelectedChar[1] = "b";
+            SelectedChar[2] = "c";
+            SelectedChar[3] = "8";
+            SelectedChar[4] = "A";
+            SelectedChar[5] = "B";
+            SelectedChar[6] = "C";
+
+            count++;
+            TxtWordBuilder.AppendText(SelectedChar[count]);
         }
 
         private void BtnNine_Click(object sender, EventArgs e)
@@ -106,6 +118,8 @@ namespace MiniKeyboard
         private void button13_Click(object sender, EventArgs e)
         {
             TxtDisplay.AppendText("\n");
+            i++;
+           
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -117,7 +131,10 @@ namespace MiniKeyboard
         {
             FileName = My_Dialogs.InputBox("Please enter a valid file name");
             StreamWriter OutputStream = File.CreateText(FilePath + FileName);
-            OutputStream.Write(TxtDisplay.Text);
+            for (int i = 1; i < 10; i++)
+            {
+                OutputStream.WriteLine();
+            }
             OutputStream.Close();
         }
 
