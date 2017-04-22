@@ -72,41 +72,71 @@ namespace MiniKeyboard
 
             count++;
             TxtWordBuilder.AppendText(SelectedChar[count-1]);
+            Str_KeyStrokes = "8";
         }
 
         private void BtnNine_Click(object sender, EventArgs e)
         {
-            TxtWordBuilder.AppendText("d");
+            string[] SelectedChar = new string[7];
+            int count = 0;
+            SelectedChar[0] = "d";
+            SelectedChar[1] = "e";
+            SelectedChar[2] = "f";
+            SelectedChar[3] = "9";
+            SelectedChar[4] = "D";
+            SelectedChar[5] = "E";
+            SelectedChar[6] = "F";
+
+            count++;
+            TxtWordBuilder.AppendText(SelectedChar[count - 1]);
+            Str_KeyStrokes = "9";
         }
 
         private void BtnFour_Click(object sender, EventArgs e)
         {
-            TxtWordBuilder.AppendText("g");
+            string[] SelectedChar = new string[7];
+            int count = 0;
+            SelectedChar[0] = "g";
+            SelectedChar[1] = "h";
+            SelectedChar[2] = "i";
+            SelectedChar[3] = "4";
+            SelectedChar[4] = "G";
+            SelectedChar[5] = "H";
+            SelectedChar[6] = "I";
+
+            count++;
+            TxtWordBuilder.AppendText(SelectedChar[count - 1]);
+            Str_KeyStrokes = "4";
         }
 
         private void BtnFive_Click(object sender, EventArgs e)
         {
             TxtWordBuilder.AppendText("j");
+            Str_KeyStrokes = "5";
         }
 
         private void BtnSix_Click(object sender, EventArgs e)
         {
             TxtWordBuilder.AppendText("m");
+            Str_KeyStrokes = "6";
         }
 
         private void BtnOne_Click(object sender, EventArgs e)
         {
             TxtWordBuilder.AppendText("p");
+            Str_KeyStrokes = "1";
         }
 
         private void BtnTwo_Click(object sender, EventArgs e)
         {
             TxtWordBuilder.AppendText("t");
+            Str_KeyStrokes = "2";
         }
 
         private void BtnThree_Click(object sender, EventArgs e)
         {
             TxtWordBuilder.AppendText("x");
+            Str_KeyStrokes = "3";
         }
 
         private void BtnStar_Click(object sender, EventArgs e)
