@@ -43,7 +43,18 @@ namespace MiniKeyboard
 
         private void BtnSeven_Click(object sender, EventArgs e)
         {
-            TxtWordBuilder.AppendText(".");
+            string[] SelectedChar = new string[7];
+            int count = 0;
+            SelectedChar[0] = ".";
+            SelectedChar[1] = "~";
+            SelectedChar[2] = "\"";
+            SelectedChar[3] = "7";
+            SelectedChar[4] = "'";
+            SelectedChar[5] = ":";
+            SelectedChar[6] = ";";
+
+            count++;
+            TxtWordBuilder.AppendText(SelectedChar[count-1]);
             Str_KeyStrokes = "7";
         }
 
@@ -60,7 +71,7 @@ namespace MiniKeyboard
             SelectedChar[6] = "C";
 
             count++;
-            TxtWordBuilder.AppendText(SelectedChar[count]);
+            TxtWordBuilder.AppendText(SelectedChar[count-1]);
         }
 
         private void BtnNine_Click(object sender, EventArgs e)
