@@ -23,6 +23,9 @@ namespace MiniKeyboard
         string FilePath = Directory.GetCurrentDirectory() + "\\";
         string FileName;
         int i = 1;
+        int ClickCount = 0;
+        bool ButtonSevenWasClicked = false;
+        int IntIntervalRequired = 500;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -45,6 +48,9 @@ namespace MiniKeyboard
         {
             string[] SelectedChar = new string[7];
             int count = 0;
+            WithinTimer.Enabled = true;
+            
+
             SelectedChar[0] = ".";
             SelectedChar[1] = "~";
             SelectedChar[2] = "\"";
@@ -52,9 +58,19 @@ namespace MiniKeyboard
             SelectedChar[4] = "'";
             SelectedChar[5] = ":";
             SelectedChar[6] = ";";
-
+            
+            ButtonSevenWasClicked = true;
+            
+            
+            TxtWordBuilder.AppendText(SelectedChar[ClickCount]);
+            
+            
+            
+            
             count++;
-            TxtWordBuilder.AppendText(SelectedChar[count-1]);
+           
+
+            
             Str_KeyStrokes = "7";
         }
 
@@ -256,6 +272,15 @@ namespace MiniKeyboard
             StreamWriter OutputStream = File.CreateText(FilePath + FileName);
             OutputStream.Write(TxtDisplay.Text);
             OutputStream.Close();
+        }
+
+        private void WithinTimer_Tick(object sender, EventArgs e)
+        {
+            if (ButtonSevenWasClicked == true)
+            {
+                ClickCount++;
+                ButtonSevenWasClicked = false;
+            }
         }
     }
 }

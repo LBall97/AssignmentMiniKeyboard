@@ -63,6 +63,7 @@
             this.BtnNext = new System.Windows.Forms.Button();
             this.BtnMode = new System.Windows.Forms.Button();
             this.WithinTimer = new System.Windows.Forms.Timer(this.components);
+            this.TimeElapsed = new System.Windows.Forms.Timer(this.components);
             this.ConfigMenu.SuspendLayout();
             this.PnlText.SuspendLayout();
             this.PnlDisplay.SuspendLayout();
@@ -431,6 +432,10 @@
             this.BtnMode.UseVisualStyleBackColor = false;
             this.BtnMode.Click += new System.EventHandler(this.BtnMode_Click);
             // 
+            // WithinTimer
+            // 
+            this.WithinTimer.Tick += new System.EventHandler(this.WithinTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -494,6 +499,7 @@
         private System.Windows.Forms.Button BtnSeven;
         private System.Windows.Forms.TextBox TxtMode;
         private System.Windows.Forms.Timer WithinTimer;
+        private System.Windows.Forms.Timer TimeElapsed;
     }
 }
 
