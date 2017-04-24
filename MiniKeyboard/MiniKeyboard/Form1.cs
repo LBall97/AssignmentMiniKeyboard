@@ -22,14 +22,13 @@ namespace MiniKeyboard
         string Str_KeyStrokes;
         string FilePath = Directory.GetCurrentDirectory() + "\\";
         string FileName;
-        int i = 1;
-        int ClickCount = 0;
-        bool ButtonSevenWasClicked = false;
+        int ClickCount = -1;
         int IntIntervalRequired = 500;
+        bool FirstVisit = true;
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void BtnMode_Click(object sender, EventArgs e)
@@ -46,31 +45,24 @@ namespace MiniKeyboard
 
         private void BtnSeven_Click(object sender, EventArgs e)
         {
-            string[] SelectedChar = new string[7];
-            int count = 0;
-            WithinTimer.Enabled = true;
-            
-
-            SelectedChar[0] = ".";
-            SelectedChar[1] = "~";
-            SelectedChar[2] = "\"";
-            SelectedChar[3] = "7";
-            SelectedChar[4] = "'";
-            SelectedChar[5] = ":";
-            SelectedChar[6] = ";";
-            
-            ButtonSevenWasClicked = true;
-            
-            
-            TxtWordBuilder.AppendText(SelectedChar[ClickCount]);
-            
-            
-            
-            
-            count++;
-           
-
-            
+            WithinTimer.Enabled = false;
+            Timer1.Enabled = false;
+            if (FirstVisit == true)
+            {
+                ClickCount++;
+                LstBoxMain.Items.Clear();
+                for (int i = 0; i < LstBoxButton7.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
+                }
+                
+                Timer1.Enabled = true;
+            }
+            else
+            {
+                WithinTimer.Enabled = true;
+                ClickCount++;
+            }
             Str_KeyStrokes = "7";
         }
 
@@ -247,7 +239,7 @@ namespace MiniKeyboard
         private void button13_Click(object sender, EventArgs e)
         {
             TxtDisplay.AppendText("\n");
-            i++;
+            
            
         }
 
@@ -276,11 +268,23 @@ namespace MiniKeyboard
 
         private void WithinTimer_Tick(object sender, EventArgs e)
         {
-            if (ButtonSevenWasClicked == true)
-            {
-                ClickCount++;
-                ButtonSevenWasClicked = false;
-            }
+
+            WithinTimer.Interval = IntIntervalRequired;
+            TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            Timer1.Enabled = false;
+            WithinTimer.Enabled = false;
+            
+            
+           
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            WithinTimer.Enabled = false;
+            ClickCount = -1;
+            FirstVisit = true;
+            
         }
     }
 }

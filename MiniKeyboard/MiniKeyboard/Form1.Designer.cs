@@ -63,7 +63,9 @@
             this.BtnNext = new System.Windows.Forms.Button();
             this.BtnMode = new System.Windows.Forms.Button();
             this.WithinTimer = new System.Windows.Forms.Timer(this.components);
-            this.TimeElapsed = new System.Windows.Forms.Timer(this.components);
+            this.Timer1 = new System.Windows.Forms.Timer(this.components);
+            this.LstBoxButton7 = new System.Windows.Forms.ListBox();
+            this.LstBoxMain = new System.Windows.Forms.ListBox();
             this.ConfigMenu.SuspendLayout();
             this.PnlText.SuspendLayout();
             this.PnlDisplay.SuspendLayout();
@@ -436,11 +438,43 @@
             // 
             this.WithinTimer.Tick += new System.EventHandler(this.WithinTimer_Tick);
             // 
+            // Timer1
+            // 
+            this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // LstBoxButton7
+            // 
+            this.LstBoxButton7.FormattingEnabled = true;
+            this.LstBoxButton7.ItemHeight = 31;
+            this.LstBoxButton7.Items.AddRange(new object[] {
+            ".",
+            "~",
+            "\"",
+            "7",
+            "\'",
+            ":",
+            ";"});
+            this.LstBoxButton7.Location = new System.Drawing.Point(1011, 536);
+            this.LstBoxButton7.Name = "LstBoxButton7";
+            this.LstBoxButton7.Size = new System.Drawing.Size(120, 66);
+            this.LstBoxButton7.TabIndex = 5;
+            // 
+            // LstBoxMain
+            // 
+            this.LstBoxMain.FormattingEnabled = true;
+            this.LstBoxMain.ItemHeight = 31;
+            this.LstBoxMain.Location = new System.Drawing.Point(13, 534);
+            this.LstBoxMain.Name = "LstBoxMain";
+            this.LstBoxMain.Size = new System.Drawing.Size(167, 66);
+            this.LstBoxMain.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1451, 1309);
+            this.Controls.Add(this.LstBoxMain);
+            this.Controls.Add(this.LstBoxButton7);
             this.Controls.Add(this.PnlKeys);
             this.Controls.Add(this.PnlDisplay);
             this.Controls.Add(this.PnlText);
@@ -499,7 +533,9 @@
         private System.Windows.Forms.Button BtnSeven;
         private System.Windows.Forms.TextBox TxtMode;
         private System.Windows.Forms.Timer WithinTimer;
-        private System.Windows.Forms.Timer TimeElapsed;
+        private System.Windows.Forms.Timer Timer1;
+        private System.Windows.Forms.ListBox LstBoxButton7;
+        private System.Windows.Forms.ListBox LstBoxMain;
     }
 }
 
