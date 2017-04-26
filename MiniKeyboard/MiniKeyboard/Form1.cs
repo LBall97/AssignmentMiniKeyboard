@@ -45,31 +45,33 @@ namespace MiniKeyboard
 
         private void BtnSeven_Click(object sender, EventArgs e)
         {
-            WithinTimer.Enabled = false;
-            Timer1.Enabled = false;
+            
             if (FirstVisit == true)
-            {
-                ClickCount++;
+            {  
+                
                 LstBoxMain.Items.Clear();
+                ClickCount++;
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
                 }
+
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
-                
-                Timer1.Enabled = true;
+                FirstVisit = false;
             }
             else
             {
-                Timer1.Enabled = false;
-                WithinTimer.Enabled = false;
+                
+                LstBoxMain.Items.Clear();
+                ClickCount++;
+                
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
                 }
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
-                WithinTimer.Enabled = true;
-                ClickCount++;
+
 
             }
             Str_KeyStrokes = "7";
@@ -277,21 +279,20 @@ namespace MiniKeyboard
 
         private void WithinTimer_Tick(object sender, EventArgs e)
         {
-
             WithinTimer.Interval = IntIntervalRequired;
-            TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
+            FirstVisit = false;
+            TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length-1);
             TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             Timer1.Enabled = false;
-            WithinTimer.Enabled = false;
             
-            
-           
+
+
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            
             WithinTimer.Enabled = false;
+            TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             ClickCount = -1;
             FirstVisit = true;
             
