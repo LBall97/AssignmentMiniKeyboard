@@ -45,11 +45,8 @@ namespace MiniKeyboard
 
         private void BtnSeven_Click(object sender, EventArgs e)
         {
-
-
             if (FirstVisit == true)
             {  
-                
                 LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
@@ -73,7 +70,6 @@ namespace MiniKeyboard
                     }
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
-
             }
             Str_KeyStrokes = "7";
         }

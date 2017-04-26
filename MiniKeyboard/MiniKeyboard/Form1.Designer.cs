@@ -65,6 +65,16 @@
             this.WithinTimer = new System.Windows.Forms.Timer(this.components);
             this.LstBoxButton7 = new System.Windows.Forms.ListBox();
             this.LstBoxMain = new System.Windows.Forms.ListBox();
+            this.LstBoxButton8 = new System.Windows.Forms.ListBox();
+            this.LstBoxButton9 = new System.Windows.Forms.ListBox();
+            this.LstBoxButton4 = new System.Windows.Forms.ListBox();
+            this.LstBoxButton5 = new System.Windows.Forms.ListBox();
+            this.LstBoxButton6 = new System.Windows.Forms.ListBox();
+            this.LstBoxButton1 = new System.Windows.Forms.ListBox();
+            this.LstBoxButton2 = new System.Windows.Forms.ListBox();
+            this.LstBoxButton3 = new System.Windows.Forms.ListBox();
+            this.LstBoxButtonStar = new System.Windows.Forms.ListBox();
+            this.LstBoxButtonHash = new System.Windows.Forms.ListBox();
             this.ConfigMenu.SuspendLayout();
             this.PnlText.SuspendLayout();
             this.PnlDisplay.SuspendLayout();
@@ -463,11 +473,185 @@
             this.LstBoxMain.Size = new System.Drawing.Size(167, 66);
             this.LstBoxMain.TabIndex = 6;
             // 
+            // LstBoxButton8
+            // 
+            this.LstBoxButton8.FormattingEnabled = true;
+            this.LstBoxButton8.ItemHeight = 31;
+            this.LstBoxButton8.Items.AddRange(new object[] {
+            "a",
+            "b",
+            "c",
+            "8",
+            "A",
+            "B",
+            "C"});
+            this.LstBoxButton8.Location = new System.Drawing.Point(1138, 536);
+            this.LstBoxButton8.Name = "LstBoxButton8";
+            this.LstBoxButton8.Size = new System.Drawing.Size(120, 66);
+            this.LstBoxButton8.TabIndex = 7;
+            // 
+            // LstBoxButton9
+            // 
+            this.LstBoxButton9.FormattingEnabled = true;
+            this.LstBoxButton9.ItemHeight = 31;
+            this.LstBoxButton9.Items.AddRange(new object[] {
+            "d",
+            "e",
+            "f",
+            "9",
+            "D",
+            "E",
+            "F"});
+            this.LstBoxButton9.Location = new System.Drawing.Point(1265, 536);
+            this.LstBoxButton9.Name = "LstBoxButton9";
+            this.LstBoxButton9.Size = new System.Drawing.Size(120, 66);
+            this.LstBoxButton9.TabIndex = 8;
+            // 
+            // LstBoxButton4
+            // 
+            this.LstBoxButton4.FormattingEnabled = true;
+            this.LstBoxButton4.ItemHeight = 31;
+            this.LstBoxButton4.Items.AddRange(new object[] {
+            "g",
+            "h",
+            "i",
+            "4",
+            "G",
+            "H",
+            "I"});
+            this.LstBoxButton4.Location = new System.Drawing.Point(1011, 610);
+            this.LstBoxButton4.Name = "LstBoxButton4";
+            this.LstBoxButton4.Size = new System.Drawing.Size(120, 66);
+            this.LstBoxButton4.TabIndex = 9;
+            // 
+            // LstBoxButton5
+            // 
+            this.LstBoxButton5.FormattingEnabled = true;
+            this.LstBoxButton5.ItemHeight = 31;
+            this.LstBoxButton5.Items.AddRange(new object[] {
+            "j",
+            "k",
+            "l",
+            "5",
+            "J",
+            "K",
+            "L"});
+            this.LstBoxButton5.Location = new System.Drawing.Point(1137, 610);
+            this.LstBoxButton5.Name = "LstBoxButton5";
+            this.LstBoxButton5.Size = new System.Drawing.Size(120, 66);
+            this.LstBoxButton5.TabIndex = 10;
+            // 
+            // LstBoxButton6
+            // 
+            this.LstBoxButton6.FormattingEnabled = true;
+            this.LstBoxButton6.ItemHeight = 31;
+            this.LstBoxButton6.Items.AddRange(new object[] {
+            "m",
+            "n",
+            "o",
+            "6",
+            "M",
+            "N",
+            "O"});
+            this.LstBoxButton6.Location = new System.Drawing.Point(1263, 608);
+            this.LstBoxButton6.Name = "LstBoxButton6";
+            this.LstBoxButton6.Size = new System.Drawing.Size(120, 66);
+            this.LstBoxButton6.TabIndex = 11;
+            // 
+            // LstBoxButton1
+            // 
+            this.LstBoxButton1.FormattingEnabled = true;
+            this.LstBoxButton1.ItemHeight = 31;
+            this.LstBoxButton1.Items.AddRange(new object[] {
+            "p",
+            "q",
+            "r",
+            "s",
+            "1",
+            "P",
+            "Q",
+            "R",
+            "S"});
+            this.LstBoxButton1.Location = new System.Drawing.Point(1011, 683);
+            this.LstBoxButton1.Name = "LstBoxButton1";
+            this.LstBoxButton1.Size = new System.Drawing.Size(120, 66);
+            this.LstBoxButton1.TabIndex = 12;
+            // 
+            // LstBoxButton2
+            // 
+            this.LstBoxButton2.FormattingEnabled = true;
+            this.LstBoxButton2.ItemHeight = 31;
+            this.LstBoxButton2.Items.AddRange(new object[] {
+            "t",
+            "u",
+            "v",
+            "2",
+            "T",
+            "U",
+            "V"});
+            this.LstBoxButton2.Location = new System.Drawing.Point(1138, 682);
+            this.LstBoxButton2.Name = "LstBoxButton2";
+            this.LstBoxButton2.Size = new System.Drawing.Size(120, 66);
+            this.LstBoxButton2.TabIndex = 13;
+            // 
+            // LstBoxButton3
+            // 
+            this.LstBoxButton3.FormattingEnabled = true;
+            this.LstBoxButton3.ItemHeight = 31;
+            this.LstBoxButton3.Items.AddRange(new object[] {
+            "x",
+            "y",
+            "z",
+            "3",
+            "X",
+            "Y",
+            "Z"});
+            this.LstBoxButton3.Location = new System.Drawing.Point(1265, 683);
+            this.LstBoxButton3.Name = "LstBoxButton3";
+            this.LstBoxButton3.Size = new System.Drawing.Size(120, 66);
+            this.LstBoxButton3.TabIndex = 14;
+            // 
+            // LstBoxButtonStar
+            // 
+            this.LstBoxButtonStar.FormattingEnabled = true;
+            this.LstBoxButtonStar.ItemHeight = 31;
+            this.LstBoxButtonStar.Items.AddRange(new object[] {
+            "*",
+            "-",
+            "_"});
+            this.LstBoxButtonStar.Location = new System.Drawing.Point(1011, 756);
+            this.LstBoxButtonStar.Name = "LstBoxButtonStar";
+            this.LstBoxButtonStar.Size = new System.Drawing.Size(120, 66);
+            this.LstBoxButtonStar.TabIndex = 15;
+            // 
+            // LstBoxButtonHash
+            // 
+            this.LstBoxButtonHash.FormattingEnabled = true;
+            this.LstBoxButtonHash.ItemHeight = 31;
+            this.LstBoxButtonHash.Items.AddRange(new object[] {
+            "#",
+            "-",
+            "_"});
+            this.LstBoxButtonHash.Location = new System.Drawing.Point(1137, 754);
+            this.LstBoxButtonHash.Name = "LstBoxButtonHash";
+            this.LstBoxButtonHash.Size = new System.Drawing.Size(120, 66);
+            this.LstBoxButtonHash.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1451, 1309);
+            this.Controls.Add(this.LstBoxButtonHash);
+            this.Controls.Add(this.LstBoxButtonStar);
+            this.Controls.Add(this.LstBoxButton3);
+            this.Controls.Add(this.LstBoxButton2);
+            this.Controls.Add(this.LstBoxButton1);
+            this.Controls.Add(this.LstBoxButton6);
+            this.Controls.Add(this.LstBoxButton5);
+            this.Controls.Add(this.LstBoxButton4);
+            this.Controls.Add(this.LstBoxButton9);
+            this.Controls.Add(this.LstBoxButton8);
             this.Controls.Add(this.LstBoxMain);
             this.Controls.Add(this.LstBoxButton7);
             this.Controls.Add(this.PnlKeys);
@@ -530,6 +714,16 @@
         private System.Windows.Forms.Timer WithinTimer;
         private System.Windows.Forms.ListBox LstBoxButton7;
         private System.Windows.Forms.ListBox LstBoxMain;
+        private System.Windows.Forms.ListBox LstBoxButton8;
+        private System.Windows.Forms.ListBox LstBoxButton9;
+        private System.Windows.Forms.ListBox LstBoxButton4;
+        private System.Windows.Forms.ListBox LstBoxButton5;
+        private System.Windows.Forms.ListBox LstBoxButton6;
+        private System.Windows.Forms.ListBox LstBoxButton1;
+        private System.Windows.Forms.ListBox LstBoxButton2;
+        private System.Windows.Forms.ListBox LstBoxButton3;
+        private System.Windows.Forms.ListBox LstBoxButtonStar;
+        private System.Windows.Forms.ListBox LstBoxButtonHash;
     }
 }
 
