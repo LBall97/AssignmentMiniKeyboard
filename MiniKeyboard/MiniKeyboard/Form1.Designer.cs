@@ -62,7 +62,6 @@
             this.BtnPrevious = new System.Windows.Forms.Button();
             this.BtnNext = new System.Windows.Forms.Button();
             this.BtnMode = new System.Windows.Forms.Button();
-            this.WithinTimer = new System.Windows.Forms.Timer(this.components);
             this.LstBoxButton7 = new System.Windows.Forms.ListBox();
             this.LstBoxMain = new System.Windows.Forms.ListBox();
             this.LstBoxButton8 = new System.Windows.Forms.ListBox();
@@ -76,6 +75,8 @@
             this.LstBoxButtonStar = new System.Windows.Forms.ListBox();
             this.LstBoxButtonHash = new System.Windows.Forms.ListBox();
             this.TxtKeyStrokes = new System.Windows.Forms.TextBox();
+            this.IntervalTimer = new System.Windows.Forms.Timer(this.components);
+            this.ElapsedTimer = new System.Windows.Forms.Timer(this.components);
             this.ConfigMenu.SuspendLayout();
             this.PnlText.SuspendLayout();
             this.PnlDisplay.SuspendLayout();
@@ -444,10 +445,6 @@
             this.BtnMode.UseVisualStyleBackColor = false;
             this.BtnMode.Click += new System.EventHandler(this.BtnMode_Click);
             // 
-            // WithinTimer
-            // 
-            this.WithinTimer.Tick += new System.EventHandler(this.WithinTimer_Tick);
-            // 
             // LstBoxButton7
             // 
             this.LstBoxButton7.FormattingEnabled = true;
@@ -645,6 +642,15 @@
             this.TxtKeyStrokes.Size = new System.Drawing.Size(135, 38);
             this.TxtKeyStrokes.TabIndex = 17;
             // 
+            // IntervalTimer
+            // 
+            this.IntervalTimer.Interval = 5000;
+            this.IntervalTimer.Tick += new System.EventHandler(this.ElapsedTimer_Tick);
+            // 
+            // ElapsedTimer
+            // 
+            this.ElapsedTimer.Tick += new System.EventHandler(this.ElapsedTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -720,7 +726,6 @@
         private System.Windows.Forms.Button BtnEight;
         private System.Windows.Forms.Button BtnSeven;
         private System.Windows.Forms.TextBox TxtMode;
-        private System.Windows.Forms.Timer WithinTimer;
         private System.Windows.Forms.ListBox LstBoxButton7;
         private System.Windows.Forms.ListBox LstBoxMain;
         private System.Windows.Forms.ListBox LstBoxButton8;
@@ -734,6 +739,8 @@
         private System.Windows.Forms.ListBox LstBoxButtonStar;
         private System.Windows.Forms.ListBox LstBoxButtonHash;
         private System.Windows.Forms.TextBox TxtKeyStrokes;
+        private System.Windows.Forms.Timer IntervalTimer;
+        private System.Windows.Forms.Timer ElapsedTimer;
     }
 }
 

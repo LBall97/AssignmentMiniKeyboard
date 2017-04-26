@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using MyDialogs;
+using System.Timers;
 
 namespace MiniKeyboard
 {
@@ -23,12 +24,11 @@ namespace MiniKeyboard
         string FilePath = Directory.GetCurrentDirectory() + "\\";
         string FileName;
         int ClickCount = -1;
-        int IntIntervalRequired = 500;
         bool FirstVisit = true;
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            TxtDisplay.Focus();
         }
 
         private void BtnMode_Click(object sender, EventArgs e)
@@ -46,7 +46,8 @@ namespace MiniKeyboard
         private void BtnSeven_Click(object sender, EventArgs e)
         {
             if (FirstVisit == true)
-            {  
+            {
+                IntervalTimer.Enabled = false;
                 LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
@@ -55,12 +56,13 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText(TxtKeyStrokes.Text + "7");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
             }
             else
             {
-                
+               
                 ClickCount++;
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
@@ -73,6 +75,7 @@ namespace MiniKeyboard
                     }
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                IntervalTimer.Enabled = true;
             }
         }
 
@@ -399,11 +402,13 @@ namespace MiniKeyboard
             TxtWordBuilder.Clear();
             ClickCount = -1;
             FirstVisit = true;
+            TxtDisplay.Focus();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
             TxtDisplay.AppendText("\n");
+            TxtDisplay.Focus();
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -431,10 +436,14 @@ namespace MiniKeyboard
 
         private void WithinTimer_Tick(object sender, EventArgs e)
         {
-            
+        }
+
+        private void ElapsedTimer_Tick(object sender, EventArgs e)
+        { 
             ClickCount = -1;
             FirstVisit = true;
-            WithinTimer.Enabled = false;
+            LstBoxMain.Items.Clear();
+            IntervalTimer.Enabled = false;
         }
     }
 }
