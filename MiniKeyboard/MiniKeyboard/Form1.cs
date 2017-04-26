@@ -55,13 +55,22 @@ namespace MiniKeyboard
                 {
                     LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
                 }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 
                 Timer1.Enabled = true;
             }
             else
             {
+                Timer1.Enabled = false;
+                WithinTimer.Enabled = false;
+                for (int i = 0; i < LstBoxButton7.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 WithinTimer.Enabled = true;
                 ClickCount++;
+
             }
             Str_KeyStrokes = "7";
         }
@@ -270,6 +279,7 @@ namespace MiniKeyboard
         {
 
             WithinTimer.Interval = IntIntervalRequired;
+            TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
             TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             Timer1.Enabled = false;
             WithinTimer.Enabled = false;
@@ -280,7 +290,7 @@ namespace MiniKeyboard
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            
             WithinTimer.Enabled = false;
             ClickCount = -1;
             FirstVisit = true;
