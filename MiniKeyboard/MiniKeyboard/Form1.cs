@@ -389,6 +389,8 @@ namespace MiniKeyboard
             TxtDisplay.AppendText(TxtWordBuilder.Text + " ");
             Str_KeyStrokes = "";
             TxtWordBuilder.Clear();
+            ClickCount = -1;
+            FirstVisit = true;
         }
 
         private void button13_Click(object sender, EventArgs e)
