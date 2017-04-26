@@ -57,7 +57,8 @@ namespace MiniKeyboard
                 FirstVisit = false;
             }
             else
-            {   
+            {
+                
                 ClickCount++;
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
@@ -71,170 +72,316 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             }
+            
             Str_KeyStrokes = "7";
         }
 
         private void BtnEight_Click(object sender, EventArgs e)
         {
-            string[] SelectedChar = new string[7];
-            int count = 0;
-            SelectedChar[0] = "a";
-            SelectedChar[1] = "b";
-            SelectedChar[2] = "c";
-            SelectedChar[3] = "8";
-            SelectedChar[4] = "A";
-            SelectedChar[5] = "B";
-            SelectedChar[6] = "C";
+            if (FirstVisit == true)
+            {
+                LstBoxMain.Items.Clear();
+                ClickCount++;
+                for (int i = 0; i < LstBoxButton8.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton8.Items[i].ToString());
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                FirstVisit = false;
+            }
+            else
+            {
+                ClickCount++;
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
+                for (int i = 0; i < LstBoxButton8.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton8.Items[i].ToString());
 
-            count++;
-            TxtWordBuilder.AppendText(SelectedChar[count-1]);
+                    if (i == 8)
+                    {
+                        i = 0;
+                    }
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            }
             Str_KeyStrokes = "8";
         }
 
         private void BtnNine_Click(object sender, EventArgs e)
         {
-            string[] SelectedChar = new string[7];
-            int count = 0;
-            SelectedChar[0] = "d";
-            SelectedChar[1] = "e";
-            SelectedChar[2] = "f";
-            SelectedChar[3] = "9";
-            SelectedChar[4] = "D";
-            SelectedChar[5] = "E";
-            SelectedChar[6] = "F";
+            if (FirstVisit == true)
+            {
+                LstBoxMain.Items.Clear();
+                ClickCount++;
+                for (int i = 0; i < LstBoxButton9.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton9.Items[i].ToString());
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                FirstVisit = false;
+            }
+            else
+            {
+                ClickCount++;
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
+                for (int i = 0; i < LstBoxButton9.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton9.Items[i].ToString());
 
-            count++;
-            TxtWordBuilder.AppendText(SelectedChar[count - 1]);
+                    if (i == 8)
+                    {
+                        i = 0;
+                    }
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            }
             Str_KeyStrokes = "9";
         }
 
         private void BtnFour_Click(object sender, EventArgs e)
         {
-            string[] SelectedChar = new string[7];
-            int count = 0;
-            SelectedChar[0] = "g";
-            SelectedChar[1] = "h";
-            SelectedChar[2] = "i";
-            SelectedChar[3] = "4";
-            SelectedChar[4] = "G";
-            SelectedChar[5] = "H";
-            SelectedChar[6] = "I";
+            if (FirstVisit == true)
+            {
+                LstBoxMain.Items.Clear();
+                ClickCount++;
+                for (int i = 0; i < LstBoxButton4.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton4.Items[i].ToString());
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                FirstVisit = false;
+            }
+            else
+            {
+                ClickCount++;
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
+                for (int i = 0; i < LstBoxButton4.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton4.Items[i].ToString());
 
-            count++;
-            TxtWordBuilder.AppendText(SelectedChar[count - 1]);
+                    if (i == 8)
+                    {
+                        i = 0;
+                    }
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            }
             Str_KeyStrokes = "4";
         }
 
         private void BtnFive_Click(object sender, EventArgs e)
         {
-            string[] SelectedChar = new string[7];
-            int count = 0;
-            SelectedChar[0] = "j";
-            SelectedChar[1] = "k";
-            SelectedChar[2] = "l";
-            SelectedChar[3] = "5";
-            SelectedChar[4] = "J";
-            SelectedChar[5] = "K";
-            SelectedChar[6] = "L";
+            if (FirstVisit == true)
+            {
+                LstBoxMain.Items.Clear();
+                ClickCount++;
+                for (int i = 0; i < LstBoxButton5.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton5.Items[i].ToString());
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                FirstVisit = false;
+            }
+            else
+            {
+                ClickCount++;
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
+                for (int i = 0; i < LstBoxButton5.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton5.Items[i].ToString());
 
-            count++;
-            TxtWordBuilder.AppendText(SelectedChar[count - 1]);
+                    if (i == 8)
+                    {
+                        i = 0;
+                    }
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            }
             Str_KeyStrokes = "5";
         }
 
         private void BtnSix_Click(object sender, EventArgs e)
         {
-            string[] SelectedChar = new string[7];
-            int count = 0;
-            SelectedChar[0] = "m";
-            SelectedChar[1] = "n";
-            SelectedChar[2] = "o";
-            SelectedChar[3] = "6";
-            SelectedChar[4] = "M";
-            SelectedChar[5] = "N";
-            SelectedChar[6] = "O";
+            if (FirstVisit == true)
+            {
+                LstBoxMain.Items.Clear();
+                ClickCount++;
+                for (int i = 0; i < LstBoxButton6.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton6.Items[i].ToString());
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                FirstVisit = false;
+            }
+            else
+            {
+                ClickCount++;
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
+                for (int i = 0; i < LstBoxButton6.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton6.Items[i].ToString());
 
-            count++;
-            TxtWordBuilder.AppendText(SelectedChar[count - 1]);
+                    if (i == 8)
+                    {
+                        i = 0;
+                    }
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            }
             Str_KeyStrokes = "6";
         }
 
         private void BtnOne_Click(object sender, EventArgs e)
         {
-            string[] SelectedChar = new string[9];
-            int count = 0;
-            SelectedChar[0] = "p";
-            SelectedChar[1] = "q";
-            SelectedChar[2] = "r";
-            SelectedChar[3] = "s";
-            SelectedChar[4] = "1";
-            SelectedChar[5] = "P";
-            SelectedChar[6] = "Q";
-            SelectedChar[7] = "R";
-            SelectedChar[8] = "S";
+            if (FirstVisit == true)
+            {
+                LstBoxMain.Items.Clear();
+                ClickCount++;
+                for (int i = 0; i < LstBoxButton1.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton1.Items[i].ToString());
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                FirstVisit = false;
+            }
+            else
+            {
+                ClickCount++;
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
+                for (int i = 0; i < LstBoxButton1.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton1.Items[i].ToString());
 
-            count++;
-            TxtWordBuilder.AppendText(SelectedChar[count - 1]);
+                    if (i == 10)
+                    {
+                        i = 0;
+                    }
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            }
             Str_KeyStrokes = "1";
         }
 
         private void BtnTwo_Click(object sender, EventArgs e)
         {
-            string[] SelectedChar = new string[7];
-            int count = 0;
-            SelectedChar[0] = "t";
-            SelectedChar[1] = "u";
-            SelectedChar[2] = "v";
-            SelectedChar[3] = "2";
-            SelectedChar[4] = "T";
-            SelectedChar[5] = "U";
-            SelectedChar[6] = "V";
+            if (FirstVisit == true)
+            {
+                LstBoxMain.Items.Clear();
+                ClickCount++;
+                for (int i = 0; i < LstBoxButton2.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton2.Items[i].ToString());
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                FirstVisit = false;
+            }
+            else
+            {
+                ClickCount++;
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
+                for (int i = 0; i < LstBoxButton2.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton2.Items[i].ToString());
 
-            count++;
-            TxtWordBuilder.AppendText(SelectedChar[count - 1]);
+                    if (i == 8)
+                    {
+                        i = 0;
+                    }
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            }
             Str_KeyStrokes = "2";
         }
 
         private void BtnThree_Click(object sender, EventArgs e)
         {
-            string[] SelectedChar = new string[7];
-            int count = 0;
-            SelectedChar[0] = "x";
-            SelectedChar[1] = "y";
-            SelectedChar[2] = "z";
-            SelectedChar[3] = "3";
-            SelectedChar[4] = "X";
-            SelectedChar[5] = "Y";
-            SelectedChar[6] = "Z";
+            if (FirstVisit == true)
+            {
+                LstBoxMain.Items.Clear();
+                ClickCount++;
+                for (int i = 0; i < LstBoxButton3.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton3.Items[i].ToString());
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                FirstVisit = false;
+            }
+            else
+            {
+                ClickCount++;
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
+                for (int i = 0; i < LstBoxButton3.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButton3.Items[i].ToString());
 
-            count++;
-            TxtWordBuilder.AppendText(SelectedChar[count - 1]);
+                    if (i == 8)
+                    {
+                        i = 0;
+                    }
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            }
             Str_KeyStrokes = "3";
         }
 
         private void BtnStar_Click(object sender, EventArgs e)
         {
-            string[] SelectedChar = new string[3];
-            int count = 0;
-            SelectedChar[0] = "*";
-            SelectedChar[1] = "-";
-            SelectedChar[2] = "_";
-           
+            if (FirstVisit == true)
+            {
+                LstBoxMain.Items.Clear();
+                ClickCount++;
+                for (int i = 0; i < LstBoxButtonStar.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButtonStar.Items[i].ToString());
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                FirstVisit = false;
+            }
+            else
+            {
+                ClickCount++;
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
+                for (int i = 0; i < LstBoxButtonStar.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButtonStar.Items[i].ToString());
 
-            count++;
-            TxtWordBuilder.AppendText(SelectedChar[count - 1]);
+                    if (i == 4)
+                    {
+                        i = 0;
+                    }
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            }
         }
 
         private void BtnHash_Click(object sender, EventArgs e)
         {
-            string[] SelectedChar = new string[7];
-            int count = 0;
-            SelectedChar[0] = "#";
-            SelectedChar[1] = "-";
-            SelectedChar[2] = "_";
+            if (FirstVisit == true)
+            {
+                LstBoxMain.Items.Clear();
+                ClickCount++;
+                for (int i = 0; i < LstBoxButtonHash.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButtonHash.Items[i].ToString());
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                FirstVisit = false;
+            }
+            else
+            {
+                ClickCount++;
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
+                for (int i = 0; i < LstBoxButtonHash.Items.Count; i++)
+                {
+                    LstBoxMain.Items.Add(LstBoxButtonHash.Items[i].ToString());
 
-            count++;
-            TxtWordBuilder.AppendText(SelectedChar[count - 1]);
+                    if (i == 4)
+                    {
+                        i = 0;
+                    }
+                }
+
+            }
         }
 
         private void BtnSpace_Click(object sender, EventArgs e)
@@ -247,8 +394,6 @@ namespace MiniKeyboard
         private void button13_Click(object sender, EventArgs e)
         {
             TxtDisplay.AppendText("\n");
-            
-           
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -280,11 +425,6 @@ namespace MiniKeyboard
             ClickCount = -1;
             FirstVisit = true;
             WithinTimer.Enabled = false;
-
-
-
-
-
         }
     }
 }
