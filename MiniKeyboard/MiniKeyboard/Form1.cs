@@ -45,7 +45,8 @@ namespace MiniKeyboard
 
         private void BtnSeven_Click(object sender, EventArgs e)
         {
-            
+
+
             if (FirstVisit == true)
             {  
                 
@@ -55,23 +56,23 @@ namespace MiniKeyboard
                 {
                     LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
                 }
-
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
             }
             else
-            {
-                
-                LstBoxMain.Items.Clear();
+            {   
                 ClickCount++;
-                
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
-                }
-                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
 
+                    if (i == 8)
+                    {
+                        i = 0;
+                    }
+                }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
 
             }
             Str_KeyStrokes = "7";
@@ -279,23 +280,15 @@ namespace MiniKeyboard
 
         private void WithinTimer_Tick(object sender, EventArgs e)
         {
-            WithinTimer.Interval = IntIntervalRequired;
-            FirstVisit = false;
-            TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length-1);
-            TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
-            Timer1.Enabled = false;
             
-
-
-        }
-
-        private void Timer1_Tick(object sender, EventArgs e)
-        {
-            WithinTimer.Enabled = false;
-            TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             ClickCount = -1;
             FirstVisit = true;
-            
+            WithinTimer.Enabled = false;
+
+
+
+
+
         }
     }
 }

@@ -63,7 +63,6 @@
             this.BtnNext = new System.Windows.Forms.Button();
             this.BtnMode = new System.Windows.Forms.Button();
             this.WithinTimer = new System.Windows.Forms.Timer(this.components);
-            this.Timer1 = new System.Windows.Forms.Timer(this.components);
             this.LstBoxButton7 = new System.Windows.Forms.ListBox();
             this.LstBoxMain = new System.Windows.Forms.ListBox();
             this.ConfigMenu.SuspendLayout();
@@ -438,10 +437,6 @@
             // 
             this.WithinTimer.Tick += new System.EventHandler(this.WithinTimer_Tick);
             // 
-            // Timer1
-            // 
-            this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
-            // 
             // LstBoxButton7
             // 
             this.LstBoxButton7.FormattingEnabled = true;
@@ -533,7 +528,6 @@
         private System.Windows.Forms.Button BtnSeven;
         private System.Windows.Forms.TextBox TxtMode;
         private System.Windows.Forms.Timer WithinTimer;
-        private System.Windows.Forms.Timer Timer1;
         private System.Windows.Forms.ListBox LstBoxButton7;
         private System.Windows.Forms.ListBox LstBoxMain;
     }
