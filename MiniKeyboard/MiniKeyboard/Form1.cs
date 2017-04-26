@@ -55,6 +55,8 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                TxtKeyStrokes.AppendText(TxtKeyStrokes.Text + "7");
+                Str_KeyStrokes = TxtKeyStrokes.Text;
             }
             else
             {
@@ -72,8 +74,6 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             }
-            
-            Str_KeyStrokes = "7";
         }
 
         private void BtnEight_Click(object sender, EventArgs e)
@@ -88,6 +88,8 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                TxtKeyStrokes.AppendText(TxtKeyStrokes.Text + "8");
+                Str_KeyStrokes = TxtKeyStrokes.Text;
             }
             else
             {
@@ -104,7 +106,6 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             }
-            Str_KeyStrokes = "8";
         }
 
         private void BtnNine_Click(object sender, EventArgs e)
@@ -119,6 +120,8 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                TxtKeyStrokes.AppendText(TxtKeyStrokes.Text + "9");
+                Str_KeyStrokes = TxtKeyStrokes.Text;
             }
             else
             {
@@ -135,7 +138,6 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             }
-            Str_KeyStrokes = "9";
         }
 
         private void BtnFour_Click(object sender, EventArgs e)
@@ -150,6 +152,8 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                TxtKeyStrokes.AppendText(TxtKeyStrokes.Text + "4");
+                Str_KeyStrokes = TxtKeyStrokes.Text;
             }
             else
             {
@@ -166,7 +170,6 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             }
-            Str_KeyStrokes = "4";
         }
 
         private void BtnFive_Click(object sender, EventArgs e)
@@ -181,6 +184,8 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                TxtKeyStrokes.AppendText(TxtKeyStrokes.Text + "5");
+                Str_KeyStrokes = TxtKeyStrokes.Text;
             }
             else
             {
@@ -197,7 +202,6 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             }
-            Str_KeyStrokes = "5";
         }
 
         private void BtnSix_Click(object sender, EventArgs e)
@@ -212,6 +216,8 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                TxtKeyStrokes.AppendText(TxtKeyStrokes.Text + "6");
+                Str_KeyStrokes = TxtKeyStrokes.Text;
             }
             else
             {
@@ -228,7 +234,6 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             }
-            Str_KeyStrokes = "6";
         }
 
         private void BtnOne_Click(object sender, EventArgs e)
@@ -243,6 +248,8 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                TxtKeyStrokes.AppendText(TxtKeyStrokes.Text + "1");
+                Str_KeyStrokes = TxtKeyStrokes.Text;
             }
             else
             {
@@ -259,7 +266,6 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             }
-            Str_KeyStrokes = "1";
         }
 
         private void BtnTwo_Click(object sender, EventArgs e)
@@ -274,6 +280,8 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                TxtKeyStrokes.AppendText(TxtKeyStrokes.Text + "2");
+                Str_KeyStrokes = TxtKeyStrokes.Text;
             }
             else
             {
@@ -290,7 +298,6 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             }
-            Str_KeyStrokes = "2";
         }
 
         private void BtnThree_Click(object sender, EventArgs e)
@@ -305,6 +312,8 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                TxtKeyStrokes.AppendText(TxtKeyStrokes.Text + "7");
+                Str_KeyStrokes = TxtKeyStrokes.Text;
             }
             else
             {
@@ -321,7 +330,6 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             }
-            Str_KeyStrokes = "3";
         }
 
         private void BtnStar_Click(object sender, EventArgs e)

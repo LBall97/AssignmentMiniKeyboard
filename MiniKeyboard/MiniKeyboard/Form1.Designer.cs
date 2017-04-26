@@ -75,6 +75,7 @@
             this.LstBoxButton3 = new System.Windows.Forms.ListBox();
             this.LstBoxButtonStar = new System.Windows.Forms.ListBox();
             this.LstBoxButtonHash = new System.Windows.Forms.ListBox();
+            this.TxtKeyStrokes = new System.Windows.Forms.TextBox();
             this.ConfigMenu.SuspendLayout();
             this.PnlText.SuspendLayout();
             this.PnlDisplay.SuspendLayout();
@@ -637,11 +638,19 @@
             this.LstBoxButtonHash.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButtonHash.TabIndex = 16;
             // 
+            // TxtKeyStrokes
+            // 
+            this.TxtKeyStrokes.Location = new System.Drawing.Point(1011, 847);
+            this.TxtKeyStrokes.Name = "TxtKeyStrokes";
+            this.TxtKeyStrokes.Size = new System.Drawing.Size(135, 38);
+            this.TxtKeyStrokes.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1451, 1309);
+            this.Controls.Add(this.TxtKeyStrokes);
             this.Controls.Add(this.LstBoxButtonHash);
             this.Controls.Add(this.LstBoxButtonStar);
             this.Controls.Add(this.LstBoxButton3);
@@ -724,6 +733,7 @@
         private System.Windows.Forms.ListBox LstBoxButton3;
         private System.Windows.Forms.ListBox LstBoxButtonStar;
         private System.Windows.Forms.ListBox LstBoxButtonHash;
+        private System.Windows.Forms.TextBox TxtKeyStrokes;
     }
 }
 
