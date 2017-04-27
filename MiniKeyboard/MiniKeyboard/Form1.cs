@@ -24,6 +24,7 @@ namespace MiniKeyboard
         string FileName = "";
         int ClickCount = -1;
         bool FirstVisit = true;
+        SaveFileDialog SaveDirectory = new SaveFileDialog();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -32,6 +33,7 @@ namespace MiniKeyboard
             {
                 saveToolStripMenuItem.Enabled = false;
             }
+            
         }
 
         private void BtnMode_Click(object sender, EventArgs e)
@@ -425,7 +427,6 @@ namespace MiniKeyboard
 
             if (FileName == "")
             {
-                SaveFileDialog SaveDirectory = new SaveFileDialog();
                 SaveDirectory.InitialDirectory = "C:\\";
                 
                 if (SaveDirectory.ShowDialog() == DialogResult.OK)
@@ -441,7 +442,10 @@ namespace MiniKeyboard
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            StreamWriter OutputStream = File.CreateText(SaveDirectory.FileName);
+            OutputStream.Write(TxtDisplay.Text);
+            FileName = SaveDirectory.FileName;
+            OutputStream.Close();
         }
 
         private void WithinTimer_Tick(object sender, EventArgs e)
