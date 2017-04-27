@@ -90,6 +90,7 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("8");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
             }
@@ -107,6 +108,7 @@ namespace MiniKeyboard
                     }
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                IntervalTimer.Enabled = true;
             }
         }
 
@@ -122,6 +124,7 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("9");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
             }
@@ -139,6 +142,7 @@ namespace MiniKeyboard
                     }
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                IntervalTimer.Enabled = true;
             }
         }
 
@@ -154,6 +158,7 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("4");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
             }
@@ -171,6 +176,7 @@ namespace MiniKeyboard
                     }
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                IntervalTimer.Enabled = true;
             }
         }
 
@@ -186,6 +192,7 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("5");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
             }
@@ -203,6 +210,7 @@ namespace MiniKeyboard
                     }
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                IntervalTimer.Enabled = true;
             }
         }
 
@@ -218,6 +226,7 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("6");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
             }
@@ -235,6 +244,7 @@ namespace MiniKeyboard
                     }
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                IntervalTimer.Enabled = true;
             }
         }
 
@@ -250,6 +260,7 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("1");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
             }
@@ -267,6 +278,7 @@ namespace MiniKeyboard
                     }
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                IntervalTimer.Enabled = true;
             }
         }
 
@@ -282,6 +294,7 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("2");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
             }
@@ -299,6 +312,7 @@ namespace MiniKeyboard
                     }
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                IntervalTimer.Enabled = true;
             }
         }
 
@@ -314,6 +328,7 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("7");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
             }
@@ -331,6 +346,7 @@ namespace MiniKeyboard
                     }
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                IntervalTimer.Enabled = true;
             }
         }
 
@@ -346,6 +362,7 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                IntervalTimer.Enabled = true;
             }
             else
             {
@@ -361,6 +378,7 @@ namespace MiniKeyboard
                     }
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                IntervalTimer.Enabled = true;
             }
         }
 
@@ -376,6 +394,7 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
+                IntervalTimer.Enabled = true;
             }
             else
             {
@@ -390,6 +409,8 @@ namespace MiniKeyboard
                         i = 0;
                     }
                 }
+                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                IntervalTimer.Enabled = true;
 
             }
         }
