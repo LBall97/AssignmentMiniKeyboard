@@ -415,8 +415,6 @@ namespace MiniKeyboard
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FileName = My_Dialogs.InputBox("Please enter a valid file name");
-            StreamWriter OutputStream = File.CreateText(FilePath + FileName);
             saveToolStripMenuItem.Enabled = true;
 
         }
@@ -443,9 +441,7 @@ namespace MiniKeyboard
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StreamWriter OutputStream = File.CreateText(FilePath + FileName);
-            OutputStream.Write(TxtDisplay.Text);
-            OutputStream.Close();
+
         }
 
         private void WithinTimer_Tick(object sender, EventArgs e)

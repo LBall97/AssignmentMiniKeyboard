@@ -461,6 +461,7 @@
             this.LstBoxButton7.Name = "LstBoxButton7";
             this.LstBoxButton7.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButton7.TabIndex = 5;
+            this.LstBoxButton7.Visible = false;
             // 
             // LstBoxMain
             // 
@@ -470,6 +471,7 @@
             this.LstBoxMain.Name = "LstBoxMain";
             this.LstBoxMain.Size = new System.Drawing.Size(167, 66);
             this.LstBoxMain.TabIndex = 6;
+            this.LstBoxMain.Visible = false;
             // 
             // LstBoxButton8
             // 
@@ -487,6 +489,7 @@
             this.LstBoxButton8.Name = "LstBoxButton8";
             this.LstBoxButton8.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButton8.TabIndex = 7;
+            this.LstBoxButton8.Visible = false;
             // 
             // LstBoxButton9
             // 
@@ -504,6 +507,7 @@
             this.LstBoxButton9.Name = "LstBoxButton9";
             this.LstBoxButton9.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButton9.TabIndex = 8;
+            this.LstBoxButton9.Visible = false;
             // 
             // LstBoxButton4
             // 
@@ -521,6 +525,7 @@
             this.LstBoxButton4.Name = "LstBoxButton4";
             this.LstBoxButton4.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButton4.TabIndex = 9;
+            this.LstBoxButton4.Visible = false;
             // 
             // LstBoxButton5
             // 
@@ -538,6 +543,7 @@
             this.LstBoxButton5.Name = "LstBoxButton5";
             this.LstBoxButton5.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButton5.TabIndex = 10;
+            this.LstBoxButton5.Visible = false;
             // 
             // LstBoxButton6
             // 
@@ -555,6 +561,7 @@
             this.LstBoxButton6.Name = "LstBoxButton6";
             this.LstBoxButton6.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButton6.TabIndex = 11;
+            this.LstBoxButton6.Visible = false;
             // 
             // LstBoxButton1
             // 
@@ -574,6 +581,7 @@
             this.LstBoxButton1.Name = "LstBoxButton1";
             this.LstBoxButton1.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButton1.TabIndex = 12;
+            this.LstBoxButton1.Visible = false;
             // 
             // LstBoxButton2
             // 
@@ -591,6 +599,7 @@
             this.LstBoxButton2.Name = "LstBoxButton2";
             this.LstBoxButton2.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButton2.TabIndex = 13;
+            this.LstBoxButton2.Visible = false;
             // 
             // LstBoxButton3
             // 
@@ -608,6 +617,7 @@
             this.LstBoxButton3.Name = "LstBoxButton3";
             this.LstBoxButton3.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButton3.TabIndex = 14;
+            this.LstBoxButton3.Visible = false;
             // 
             // LstBoxButtonStar
             // 
@@ -621,6 +631,7 @@
             this.LstBoxButtonStar.Name = "LstBoxButtonStar";
             this.LstBoxButtonStar.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButtonStar.TabIndex = 15;
+            this.LstBoxButtonStar.Visible = false;
             // 
             // LstBoxButtonHash
             // 
@@ -634,6 +645,7 @@
             this.LstBoxButtonHash.Name = "LstBoxButtonHash";
             this.LstBoxButtonHash.Size = new System.Drawing.Size(120, 66);
             this.LstBoxButtonHash.TabIndex = 16;
+            this.LstBoxButtonHash.Visible = false;
             // 
             // TxtKeyStrokes
             // 
@@ -641,10 +653,11 @@
             this.TxtKeyStrokes.Name = "TxtKeyStrokes";
             this.TxtKeyStrokes.Size = new System.Drawing.Size(135, 38);
             this.TxtKeyStrokes.TabIndex = 17;
+            this.TxtKeyStrokes.Visible = false;
             // 
             // IntervalTimer
             // 
-            this.IntervalTimer.Interval = 5000;
+            this.IntervalTimer.Interval = 500;
             this.IntervalTimer.Tick += new System.EventHandler(this.ElapsedTimer_Tick);
             // 
             // ElapsedTimer
