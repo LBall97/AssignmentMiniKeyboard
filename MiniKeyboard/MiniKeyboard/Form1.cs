@@ -88,7 +88,6 @@ namespace MiniKeyboard
                 {
                     LstBoxMain.Items.Add(LstBoxButton8.Items[i].ToString());
                 }
-                FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("8");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
@@ -114,7 +113,6 @@ namespace MiniKeyboard
                 {
                     LstBoxMain.Items.Add(LstBoxButton9.Items[i].ToString());
                 }
-                FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("9");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
@@ -140,7 +138,6 @@ namespace MiniKeyboard
                 {
                     LstBoxMain.Items.Add(LstBoxButton4.Items[i].ToString());
                 }
-                FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("4");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
@@ -166,7 +163,6 @@ namespace MiniKeyboard
                 {
                     LstBoxMain.Items.Add(LstBoxButton5.Items[i].ToString());
                 }
-                FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("5");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
@@ -192,7 +188,6 @@ namespace MiniKeyboard
                 {
                     LstBoxMain.Items.Add(LstBoxButton6.Items[i].ToString());
                 }
-                FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("6");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
@@ -218,7 +213,6 @@ namespace MiniKeyboard
                 {
                     LstBoxMain.Items.Add(LstBoxButton1.Items[i].ToString());
                 }
-                FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("1");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
@@ -244,7 +238,6 @@ namespace MiniKeyboard
                 {
                     LstBoxMain.Items.Add(LstBoxButton2.Items[i].ToString());
                 }
-                FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("2");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
@@ -270,7 +263,6 @@ namespace MiniKeyboard
                 {
                     LstBoxMain.Items.Add(LstBoxButton3.Items[i].ToString());
                 }
-                FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("7");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
@@ -296,7 +288,6 @@ namespace MiniKeyboard
                 {
                      LstBoxMain.Items.Add(LstBoxButtonStar.Items[i].ToString());
                 }
-                FirstVisit = false;
                 IntervalTimer.Enabled = true;
             }
             else
@@ -320,7 +311,6 @@ namespace MiniKeyboard
                 {
                     LstBoxMain.Items.Add(LstBoxButtonHash.Items[i].ToString());
                 }
-                FirstVisit = false;
                 IntervalTimer.Enabled = true;
             }
             else
