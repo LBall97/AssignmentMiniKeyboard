@@ -22,13 +22,17 @@ namespace MiniKeyboard
 
         string Str_KeyStrokes;
         string FilePath = Directory.GetCurrentDirectory() + "\\";
-        string FileName;
+        string FileName = "";
         int ClickCount = -1;
         bool FirstVisit = true;
 
         private void Form1_Load(object sender, EventArgs e)
         {
             TxtDisplay.Focus();
+            if (FileName == "")
+            {
+                saveToolStripMenuItem.Enabled = false;
+            }
         }
 
         private void BtnMode_Click(object sender, EventArgs e)
@@ -434,12 +438,16 @@ namespace MiniKeyboard
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FileName = My_Dialogs.InputBox("Please enter a valid file name");
+            StreamWriter OutputStream = File.CreateText(FilePath + FileName);
+            saveToolStripMenuItem.Enabled = true;
+
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FileName = My_Dialogs.InputBox("Please enter a valid file name");
             StreamWriter OutputStream = File.CreateText(FilePath + FileName);
+            saveToolStripMenuItem.Enabled = true;
             for (int i = 1; i < 10; i++)
             {
                 OutputStream.WriteLine();
