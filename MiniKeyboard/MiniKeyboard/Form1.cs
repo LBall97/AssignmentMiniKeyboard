@@ -50,7 +50,7 @@ namespace MiniKeyboard
 
         private void BtnSeven_Click(object sender, EventArgs e)
         {
-            
+            IntervalTimer.Enabled = false;
             if (FirstVisit == true)
             {
                 LstBoxMain.Items.Clear();
@@ -418,6 +418,15 @@ namespace MiniKeyboard
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveToolStripMenuItem.Enabled = true;
+            if (FileName == "")
+            {
+                SaveDirectory.InitialDirectory = "C:\\";
+
+                if (SaveDirectory.ShowDialog() == DialogResult.OK)
+                {
+                    StreamWriter OutputStream = File.CreateText(SaveDirectory.FileName);
+                }
+            }
 
         }
 

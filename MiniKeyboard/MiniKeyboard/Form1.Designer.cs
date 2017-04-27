@@ -657,7 +657,7 @@
             // 
             // IntervalTimer
             // 
-            this.IntervalTimer.Interval = 500;
+            this.IntervalTimer.Interval = 1000;
             this.IntervalTimer.Tick += new System.EventHandler(this.ElapsedTimer_Tick);
             // 
             // ElapsedTimer
