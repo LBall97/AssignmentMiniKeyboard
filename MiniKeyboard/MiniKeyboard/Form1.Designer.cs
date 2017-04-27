@@ -92,7 +92,7 @@
             this.ConfigMenu.Location = new System.Drawing.Point(0, 0);
             this.ConfigMenu.Name = "ConfigMenu";
             this.ConfigMenu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.ConfigMenu.Size = new System.Drawing.Size(1434, 49);
+            this.ConfigMenu.Size = new System.Drawing.Size(1434, 52);
             this.ConfigMenu.TabIndex = 0;
             this.ConfigMenu.Text = "menuStrip1";
             // 
@@ -105,7 +105,7 @@
             this.saveAsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.FileMenu.Name = "FileMenu";
-            this.FileMenu.Size = new System.Drawing.Size(75, 45);
+            this.FileMenu.Size = new System.Drawing.Size(75, 48);
             this.FileMenu.Text = "File";
             // 
             // newToolStripMenuItem
@@ -118,8 +118,9 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(234, 46);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(327, 46);
             this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 

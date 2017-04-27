@@ -396,5 +396,23 @@ namespace MiniKeyboard
             LstBoxMain.Items.Clear();
             IntervalTimer.Enabled = false;
         }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string LineOfText;
+            OpenFileDialog OpenFile = new OpenFileDialog();
+
+            OpenFile.InitialDirectory = "C:\\";
+            if (OpenFile.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader InputStream = File.OpenText(OpenFile.FileName);
+                LineOfText = InputStream.ReadLine();
+                while (LineOfText != null)
+                {
+                    TxtDisplay.AppendText(LineOfText + Environment.NewLine);
+                    LineOfText = InputStream.ReadLine();
+                }
+                InputStream.Close();
+        }
     }
 }
