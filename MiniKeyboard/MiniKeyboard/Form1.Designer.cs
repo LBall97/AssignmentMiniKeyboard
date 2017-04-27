@@ -92,7 +92,7 @@
             this.ConfigMenu.Location = new System.Drawing.Point(0, 0);
             this.ConfigMenu.Name = "ConfigMenu";
             this.ConfigMenu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.ConfigMenu.Size = new System.Drawing.Size(1451, 49);
+            this.ConfigMenu.Size = new System.Drawing.Size(1434, 49);
             this.ConfigMenu.TabIndex = 0;
             this.ConfigMenu.Text = "menuStrip1";
             // 
@@ -657,7 +657,7 @@
             // 
             // IntervalTimer
             // 
-            this.IntervalTimer.Interval = 1000;
+            this.IntervalTimer.Interval = 500;
             this.IntervalTimer.Tick += new System.EventHandler(this.ElapsedTimer_Tick);
             // 
             // ElapsedTimer
@@ -668,7 +668,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1451, 1309);
+            this.ClientSize = new System.Drawing.Size(1434, 1310);
             this.Controls.Add(this.TxtKeyStrokes);
             this.Controls.Add(this.LstBoxButtonHash);
             this.Controls.Add(this.LstBoxButtonStar);
@@ -688,9 +688,13 @@
             this.Controls.Add(this.ConfigMenu);
             this.MainMenuStrip = this.ConfigMenu;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(1483, 1397);
+            this.MaximumSize = new System.Drawing.Size(1466, 1398);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1466, 1398);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mini Keyboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ConfigMenu.ResumeLayout(false);
             this.ConfigMenu.PerformLayout();

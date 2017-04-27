@@ -28,6 +28,7 @@ namespace MiniKeyboard
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Size = new Size(1483, 1397);
             TxtDisplay.Focus();
             if (FileName == "")
             {
@@ -53,14 +54,11 @@ namespace MiniKeyboard
             IntervalTimer.Enabled = false;
             if (FirstVisit == true)
             {
-                LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
-                FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("7");
                 Str_KeyStrokes = TxtKeyStrokes.Text;
@@ -71,12 +69,10 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
                 {
-                    if (i == 8)
-                    {
-                        i = 0;
-                    }
+                    LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
+
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+                
                 IntervalTimer.Enabled = true;
                 
             }
@@ -84,15 +80,14 @@ namespace MiniKeyboard
 
         private void BtnEight_Click(object sender, EventArgs e)
         {
+            IntervalTimer.Enabled = false;
             if (FirstVisit == true)
             {
-                LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton8.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton8.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("8");
@@ -104,12 +99,8 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton8.Items.Count; i++)
                 {
-                    if (i == 8)
-                    {
-                        i = 0;
-                    }
+                    LstBoxMain.Items.Add(LstBoxButton8.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 IntervalTimer.Enabled = true;
             }
         }
@@ -118,13 +109,11 @@ namespace MiniKeyboard
         {
             if (FirstVisit == true)
             {
-                LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton9.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton9.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("9");
@@ -136,12 +125,8 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton9.Items.Count; i++)
                 {
-                    if (i == 8)
-                    {
-                        i = 0;
-                    }
+                    LstBoxMain.Items.Add(LstBoxButton9.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 IntervalTimer.Enabled = true;
             }
         }
@@ -150,13 +135,11 @@ namespace MiniKeyboard
         {
             if (FirstVisit == true)
             {
-                LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton4.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton4.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("4");
@@ -168,12 +151,8 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton4.Items.Count; i++)
                 {
-                    if (i == 8)
-                    {
-                        i = 0;
-                    }
+                    LstBoxMain.Items.Add(LstBoxButton4.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 IntervalTimer.Enabled = true;
             }
         }
@@ -182,13 +161,11 @@ namespace MiniKeyboard
         {
             if (FirstVisit == true)
             {
-                LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton5.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton5.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("5");
@@ -200,12 +177,8 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton5.Items.Count; i++)
                 {
-                    if (i == 8)
-                    {
-                        i = 0;
-                    }
+                    LstBoxMain.Items.Add(LstBoxButton5.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 IntervalTimer.Enabled = true;
             }
         }
@@ -214,13 +187,11 @@ namespace MiniKeyboard
         {
             if (FirstVisit == true)
             {
-                LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton6.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton6.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("6");
@@ -232,12 +203,8 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton6.Items.Count; i++)
                 {
-                    if (i == 8)
-                    {
-                        i = 0;
-                    }
+                    LstBoxMain.Items.Add(LstBoxButton6.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 IntervalTimer.Enabled = true;
             }
         }
@@ -246,13 +213,11 @@ namespace MiniKeyboard
         {
             if (FirstVisit == true)
             {
-                LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton1.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton1.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("1");
@@ -264,12 +229,8 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton1.Items.Count; i++)
                 {
-                    if (i == 10)
-                    {
-                        i = 0;
-                    }
+                    LstBoxMain.Items.Add(LstBoxButton1.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 IntervalTimer.Enabled = true;
             }
         }
@@ -278,13 +239,11 @@ namespace MiniKeyboard
         {
             if (FirstVisit == true)
             {
-                LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton2.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton2.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("2");
@@ -296,12 +255,8 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton2.Items.Count; i++)
                 {
-                    if (i == 8)
-                    {
-                        i = 0;
-                    }
+                    LstBoxMain.Items.Add(LstBoxButton2.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 IntervalTimer.Enabled = true;
             }
         }
@@ -310,13 +265,11 @@ namespace MiniKeyboard
         {
             if (FirstVisit == true)
             {
-                LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton3.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton3.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
                 IntervalTimer.Enabled = true;
                 TxtKeyStrokes.AppendText("7");
@@ -328,12 +281,8 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton3.Items.Count; i++)
                 {
-                    if (i == 8)
-                    {
-                        i = 0;
-                    }
+                    LstBoxMain.Items.Add(LstBoxButton3.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 IntervalTimer.Enabled = true;
             }
         }
@@ -342,13 +291,11 @@ namespace MiniKeyboard
         {
             if (FirstVisit == true)
             {
-                LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButtonStar.Items.Count; i++)
                 {
                      LstBoxMain.Items.Add(LstBoxButtonStar.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
                 IntervalTimer.Enabled = true;
             }
@@ -358,12 +305,8 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButtonStar.Items.Count; i++)
                 {
-                    if (i == 4)
-                    {
-                        i = 0;
-                    }
+                    LstBoxMain.Items.Add(LstBoxButtonStar.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 IntervalTimer.Enabled = true;
             }
         }
@@ -372,13 +315,11 @@ namespace MiniKeyboard
         {
             if (FirstVisit == true)
             {
-                LstBoxMain.Items.Clear();
                 ClickCount++;
                 for (int i = 0; i < LstBoxButtonHash.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButtonHash.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
                 IntervalTimer.Enabled = true;
             }
@@ -387,13 +328,9 @@ namespace MiniKeyboard
                 ClickCount++;
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButtonHash.Items.Count; i++)
-                { 
-                    if (i == 4)
-                    {
-                        i = 0;
-                    }
+                {
+                    LstBoxMain.Items.Add(LstBoxButtonHash.Items[i].ToString());
                 }
-                TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 IntervalTimer.Enabled = true;
 
             }
@@ -462,7 +399,8 @@ namespace MiniKeyboard
         }
 
         private void ElapsedTimer_Tick(object sender, EventArgs e)
-        { 
+        {
+            TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
             ClickCount = -1;
             FirstVisit = true;
             LstBoxMain.Items.Clear();
