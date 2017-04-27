@@ -69,7 +69,6 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
                     if (i == 8)
                     {
                         i = 0;
@@ -103,8 +102,6 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton8.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButton8.Items[i].ToString());
-
                     if (i == 8)
                     {
                         i = 0;
@@ -137,8 +134,6 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton9.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButton9.Items[i].ToString());
-
                     if (i == 8)
                     {
                         i = 0;
@@ -171,8 +166,6 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton4.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButton4.Items[i].ToString());
-
                     if (i == 8)
                     {
                         i = 0;
@@ -205,8 +198,6 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton5.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButton5.Items[i].ToString());
-
                     if (i == 8)
                     {
                         i = 0;
@@ -239,8 +230,6 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton6.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButton6.Items[i].ToString());
-
                     if (i == 8)
                     {
                         i = 0;
@@ -273,8 +262,6 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton1.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButton1.Items[i].ToString());
-
                     if (i == 10)
                     {
                         i = 0;
@@ -307,8 +294,6 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton2.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButton2.Items[i].ToString());
-
                     if (i == 8)
                     {
                         i = 0;
@@ -341,8 +326,6 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton3.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButton3.Items[i].ToString());
-
                     if (i == 8)
                     {
                         i = 0;
@@ -361,7 +344,7 @@ namespace MiniKeyboard
                 ClickCount++;
                 for (int i = 0; i < LstBoxButtonStar.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButtonStar.Items[i].ToString());
+                     LstBoxMain.Items.Add(LstBoxButtonStar.Items[i].ToString());
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 FirstVisit = false;
@@ -373,8 +356,6 @@ namespace MiniKeyboard
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButtonStar.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButtonStar.Items[i].ToString());
-
                     if (i == 4)
                     {
                         i = 0;
@@ -404,9 +385,7 @@ namespace MiniKeyboard
                 ClickCount++;
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButtonHash.Items.Count; i++)
-                {
-                    LstBoxMain.Items.Add(LstBoxButtonHash.Items[i].ToString());
-
+                { 
                     if (i == 4)
                     {
                         i = 0;
