@@ -92,7 +92,7 @@
             this.ConfigMenu.Location = new System.Drawing.Point(0, 0);
             this.ConfigMenu.Name = "ConfigMenu";
             this.ConfigMenu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.ConfigMenu.Size = new System.Drawing.Size(1434, 52);
+            this.ConfigMenu.Size = new System.Drawing.Size(1434, 49);
             this.ConfigMenu.TabIndex = 0;
             this.ConfigMenu.Text = "menuStrip1";
             // 
@@ -194,6 +194,7 @@
             this.TxtDisplay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtDisplay.Multiline = true;
             this.TxtDisplay.Name = "TxtDisplay";
+            this.TxtDisplay.ReadOnly = true;
             this.TxtDisplay.Size = new System.Drawing.Size(1393, 452);
             this.TxtDisplay.TabIndex = 0;
             // 

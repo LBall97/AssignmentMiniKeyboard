@@ -20,28 +20,28 @@ namespace MiniKeyboard
             InitializeComponent();
         }
 
-        string Str_KeyStrokes;
+        string Str_KeyStrokes;  //Global variables
         string FileName = "";
         int ClickCount = -1;
-        bool FirstVisit = true;
-        SaveFileDialog SaveDirectory = new SaveFileDialog();
+        bool FirstVisit = true; 
+        SaveFileDialog SaveDirectory = new SaveFileDialog(); //enables save menu for save as
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Size = new Size(1483, 1397);
-            TxtDisplay.Focus();
-            if (FileName == "")
+            this.Size = new Size(1483, 1397); //Sets size of form
+            TxtDisplay.Focus(); //Puts cursor in main text box so that the user can see where text will be entered
+            if (FileName == "") 
             {
-                saveToolStripMenuItem.Enabled = false;
+                saveToolStripMenuItem.Enabled = false; //if there is no file name the save function will not be available
             }
-            
+
         }
 
         private void BtnMode_Click(object sender, EventArgs e)
         {
             if (TxtMode.Text == "Multi-Press")
             {
-                TxtMode.Text = "Prediction";
+                TxtMode.Text = "Prediction"; //changes to prediction mode
             }
             else
             {
@@ -57,24 +57,24 @@ namespace MiniKeyboard
                 ClickCount++;
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
                 {
-                    LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
+                    LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString()); //adds items from button list to the main list
                 }
-                IntervalTimer.Enabled = true;
-                TxtKeyStrokes.AppendText("7");
+                IntervalTimer.Enabled = true; //starts time check between button presses
+                TxtKeyStrokes.AppendText("7"); //adds key stroke to a text box which is then added to the variable
                 Str_KeyStrokes = TxtKeyStrokes.Text;
             }
             else
             {
                 ClickCount++;
-                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
-                for (int i = 0; i < LstBoxButton7.Items.Count; i++)
+                TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1); //removes previous character from the word builder
+                for (int i = 0; i < LstBoxButton7.Items.Count; i++) 
                 {
-                    LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
+                    LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString()); //adds items from button list to main list
 
                 }
-                
-                IntervalTimer.Enabled = true;
-                
+
+                IntervalTimer.Enabled = true; //enables time check
+
             }
         }
 
@@ -286,7 +286,7 @@ namespace MiniKeyboard
                 ClickCount++;
                 for (int i = 0; i < LstBoxButtonStar.Items.Count; i++)
                 {
-                     LstBoxMain.Items.Add(LstBoxButtonStar.Items[i].ToString());
+                    LstBoxMain.Items.Add(LstBoxButtonStar.Items[i].ToString());
                 }
                 IntervalTimer.Enabled = true;
             }
@@ -328,33 +328,30 @@ namespace MiniKeyboard
 
         private void BtnSpace_Click(object sender, EventArgs e)
         {
-            TxtDisplay.AppendText(TxtWordBuilder.Text + " ");
-            Str_KeyStrokes = "";
-            TxtWordBuilder.Clear();
-            ClickCount = -1;
-            FirstVisit = true;
-            TxtDisplay.Focus();
+            TxtDisplay.AppendText(TxtWordBuilder.Text + " "); //adds word to the display and adds a space inbetween
+            Str_KeyStrokes = ""; //emptys keystrokes variable
+            TxtWordBuilder.Clear(); //clears the word builder
+            ClickCount = -1; //resets the amount of clicks/index of list
+            FirstVisit = true; //enables first visit again as a new word will be created
+            TxtDisplay.Focus(); //sets cursor on display once again
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            TxtDisplay.AppendText("\n");
+            TxtDisplay.AppendText("\n"); //new line
             TxtDisplay.Focus();
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            saveToolStripMenuItem.Enabled = true;
-            if (FileName == "")
-            {
-                SaveDirectory.InitialDirectory = "C:\\";
+            saveToolStripMenuItem.Enabled = true; //enables save function once save as has been carried out
+            
+                SaveDirectory.InitialDirectory = "C:\\"; //allows the user to select a place to save the file and name the file
 
                 if (SaveDirectory.ShowDialog() == DialogResult.OK)
                 {
-                    StreamWriter OutputStream = File.CreateText(SaveDirectory.FileName);
+                    StreamWriter OutputStream = File.CreateText(SaveDirectory.FileName); //creates a text file with the FileName
                 }
-            }
-
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -364,14 +361,14 @@ namespace MiniKeyboard
             if (FileName == "")
             {
                 SaveDirectory.InitialDirectory = "C:\\";
-                
+
                 if (SaveDirectory.ShowDialog() == DialogResult.OK)
                 {
                     StreamWriter OutputStream = File.CreateText(SaveDirectory.FileName);
                     OutputStream.Write(TxtDisplay.Text);
                     FileName = SaveDirectory.FileName;
                     OutputStream.Close();
-                    
+
                 }
             }
         }
@@ -386,11 +383,11 @@ namespace MiniKeyboard
 
         private void WithinTimer_Tick(object sender, EventArgs e)
         {
-        }
+        } //obsolete timer that if removed would cause an error.
 
         private void ElapsedTimer_Tick(object sender, EventArgs e)
         {
-            TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
+            TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString()); //timer for what occurs once Interval is met
             ClickCount = -1;
             FirstVisit = true;
             LstBoxMain.Items.Clear();
@@ -403,7 +400,7 @@ namespace MiniKeyboard
             OpenFileDialog OpenFile = new OpenFileDialog();
 
             OpenFile.InitialDirectory = "C:\\";
-            if (OpenFile.ShowDialog() == DialogResult.OK)
+            if (OpenFile.ShowDialog() == DialogResult.OK) //Opens a previously saved text file
             {
                 StreamReader InputStream = File.OpenText(OpenFile.FileName);
                 LineOfText = InputStream.ReadLine();
@@ -413,6 +410,7 @@ namespace MiniKeyboard
                     LineOfText = InputStream.ReadLine();
                 }
                 InputStream.Close();
+            }
         }
     }
 }
