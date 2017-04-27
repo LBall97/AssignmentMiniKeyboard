@@ -21,7 +21,6 @@ namespace MiniKeyboard
         }
 
         string Str_KeyStrokes;
-        string FilePath = Directory.GetCurrentDirectory() + "\\";
         string FileName = "";
         int ClickCount = -1;
         bool FirstVisit = true;
@@ -49,6 +48,7 @@ namespace MiniKeyboard
 
         private void BtnSeven_Click(object sender, EventArgs e)
         {
+            
             if (FirstVisit == true)
             {
                 LstBoxMain.Items.Clear();
@@ -65,13 +65,11 @@ namespace MiniKeyboard
             }
             else
             {
-               
                 ClickCount++;
                 TxtWordBuilder.Text = TxtWordBuilder.Text.Remove(TxtWordBuilder.Text.Length - 1);
                 for (int i = 0; i < LstBoxButton7.Items.Count; i++)
                 {
                     LstBoxMain.Items.Add(LstBoxButton7.Items[i].ToString());
-
                     if (i == 8)
                     {
                         i = 0;
@@ -79,6 +77,7 @@ namespace MiniKeyboard
                 }
                 TxtWordBuilder.AppendText(LstBoxMain.Items[ClickCount].ToString());
                 IntervalTimer.Enabled = true;
+                
             }
         }
 
@@ -445,14 +444,22 @@ namespace MiniKeyboard
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FileName = My_Dialogs.InputBox("Please enter a valid file name");
-            StreamWriter OutputStream = File.CreateText(FilePath + FileName);
             saveToolStripMenuItem.Enabled = true;
-            for (int i = 1; i < 10; i++)
+
+            if (FileName == "")
             {
-                OutputStream.WriteLine();
+                SaveFileDialog SaveDirectory = new SaveFileDialog();
+                SaveDirectory.InitialDirectory = "C:\\";
+                
+                if (SaveDirectory.ShowDialog() == DialogResult.OK)
+                {
+                    StreamWriter OutputStream = File.CreateText(SaveDirectory.FileName);
+                    OutputStream.Write(TxtDisplay.Text);
+                    FileName = SaveDirectory.FileName;
+                    OutputStream.Close();
+                    
+                }
             }
-            OutputStream.Close();
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
